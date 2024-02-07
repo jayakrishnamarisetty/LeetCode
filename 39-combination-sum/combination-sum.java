@@ -11,7 +11,7 @@ class Solution {
         veda(r, ind, ans, result, t, size, sum + r[ind]);
         ans.remove(ans.size() - 1);
         int j = ind + 1;
-        while (j < size && r[j] == r[j - 1])
+        while (j+1 < size && r[j] == r[j + 1])
             j += 1;
         veda(r, j, ans, result, t, size, sum);
     }
