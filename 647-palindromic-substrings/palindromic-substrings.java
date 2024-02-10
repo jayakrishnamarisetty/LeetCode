@@ -4,7 +4,7 @@ class Solution {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
             for (int j = i; j < s.length(); j++) {
-                if (isPalindrome(s.substring(i, j + 1))) {
+                if (rug(s.substring(i, j + 1))) {
                     count++;
                 }
             }
@@ -12,7 +12,7 @@ class Solution {
         return count;
     }
     
-    private boolean isPalindrome(String s) {
+     boolean rug(String s) {
         int i = 0, j = s.length() - 1;
         while (i < j) {
             if (s.charAt(i) != s.charAt(j)) {
