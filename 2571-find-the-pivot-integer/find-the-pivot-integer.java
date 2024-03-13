@@ -1,8 +1,8 @@
 class Solution {
     public int pivotInteger(int n) {
-     int sum=n*(n+1)/2;
-     int sq=(int)Math.sqrt(sum);
-     if(sq*sq==sum){
+     int rug=n*(n+1)/2;
+     int sq=(int)Math.sqrt(rug);
+     if(sq*sq==rug){
         return sq;
      }
      return -1;
